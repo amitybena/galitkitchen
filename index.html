@@ -189,9 +189,11 @@
             }
         }
 
+        
         window.addEventListener('scroll', reveal2);
 
         function reveal2() {
+
             var reveals2 = document.querySelectorAll('.reveal2');
 
             for (var i = 0; i < reveals2.length; i++) {
@@ -202,14 +204,38 @@
 
                 if (revealtop < windowheight - revealpoint) {
                     reveals2[i].classList.add('active');
+
                 } else {
                     reveals2[i].classList.remove('active');
                 }
+
+
             }
         }
         
         
         
+        window.addEventListener('scroll', reveal4);
+
+        function reveal4() {
+            var reveals4 = document.querySelectorAll('.reveal4');
+
+            for (var i = 0; i < reveals4.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals4[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals4[i].classList.add('active');
+                } else {
+                    reveals4[i].classList.remove('active');
+                }
+            }
+        }
+
+
+
         window.addEventListener('scroll', reveal3);
 
         function reveal3() {
