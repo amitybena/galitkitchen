@@ -989,7 +989,29 @@ nav .fa-bars {
     top: 30px;
 }
 }
+@media all and (max-width:370px) {
 
+    .aboutpic h1 {
+        padding-top: 7%;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .aboutdit hr {
+       width: 90%;
+        margin-left:  5%;
+        margin-top: 7px;
+        margin-bottom: 50px;
+        height: 1px;
+        background-color: white;
+    }
+
+    .aboutpic h2 {
+        font-size: 27px;
+        top: 29%;
+        font-weight: 500;
+    }
+}
 @media all and (max-width:1050px){
     .bott {
     position: relative;
